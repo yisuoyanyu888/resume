@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" href="css/index.css">
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<h1 class="mui-title">求职橙诺网</h1>
+		</header>
+		<nav class="mui-bar mui-bar-tab">			
+			<a class="mui-tab-item mui-active" href="#tabbar-aboutme">
+				<span class="mui-icon mui-icon-contact"></span>
+				<span class="mui-tab-label">简历</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar">
+				<span class="mui-icon mui-icon-chat"></span>
+				<span class="mui-tab-label">吐槽</span>
+			</a>
+		</nav>
+		<div class="mui-content">
+			<div id="tabbar" class="mui-control-content">
+				<div class="mui-card" style="margin-top: 20px;">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell mui-collapse">
+						<a class="mui-navigate-right" href="#">动态VS静态</a>
+						<div class="mui-collapse-content">
+							<p>
+								橙诺网现在的手机版网页和pc端网页都是由php生成的，属于动态网页。近年来，随着Ajax技术的兴起，对于移动端开发，我们有了更好的方式：把网页全部做成静态的html，需要动态变化的地方，向服务端发起Ajax请求即可。这样做可以既有利于SEO，又可以提高网站的访问速度，提升用户体验。另外，这样开发的web项目经过改造优化之后还可以打包成Android应用和ios应用，对于没有Android工程师和ios工程师的企业来说，是一个省时省力的方案。
+							</p>
+						</div>
+					</li>
+					<li class="mui-table-view-cell mui-collapse">
+						<a class="mui-navigate-right" href="#">框架和库</a>
+						<div class="mui-collapse-content">
+							<p>
+								对于前端的框架和库，我个人的观点是要根据项目特点合理选择。电脑上的各种浏览器由于内核不同，考虑到兼容性及方便地操作DOM，可以选用jQuery。但是在手机端，用jQuery太重了！各种手机的性能差别很大，为了照顾低端手机，前端应该选用轻量级的框架或者直接使用原生JavaScript。
+                                橙诺网手机端网页的很多页面不但用了jQuery还用了jQuery插件，甚至有些页面还同时用了jquery和zepto，这对用户来说简直就是灾难。（话说，功能类似的两个库有必要一起用么？）
+							</p>
+						</div>
+					</li>
+					<li class="mui-table-view-cell mui-collapse">
+						<a class="mui-navigate-right" href="#">图片运用</a>
+						<div class="mui-collapse-content">
+							<p>
+								作为婚拍网站，图片必然是很多的，不对图片进行优化，对用户来说是又一灾难。橙诺网手机端的图片基本都是100kb以上，几百kb的也有，往往一个页面要放多张图片，网络不好的时候谁有耐心等待？压缩图片这种小问题都想不到，怎能提高用户体验？
+							</p>
+						</div>
+					</li>
+					<li class="mui-table-view-cell mui-collapse">
+						<a class="mui-navigate-right" href="#">移动优化</a>
+						<div class="mui-collapse-content">
+							<p>
+								总结一下，我所理解的web前端，不是只把页面写出来勉强能看就行。做前端，要时时刻刻思考怎样提高网站性能，怎样提升用户体验。做移动web开发，要考虑移动设备特点。精简代码、精简图片、精简整体结构，优化布局设计，都是前端可以做的。不能用pc端的思维做移动开发！
+							</p>
+						</div>
+					</li>
+				</ul>
+			  </div>
+			</div>
+			
+			<div id="tabbar-aboutme" class="mui-control-content mui-active">
+			  <div class="mui-card" style="margin-top: 20px;">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell mui-collapse">
+						<a class="mui-navigate-right" href="#">基本信息</a>
+						<div class="mui-collapse-content">
+							<h4>姓名：唐姣</h4>
+							<h4>年龄：24</h4>
+							<h4>籍贯：湖南常德</h4>
+							<h4>手机：15200601376</h4>
+						</div>
+					</li>
+					<li class="mui-table-view-cell mui-collapse">
+						<a class="mui-navigate-right" href="#">教育经历</a>
+						<div class="mui-collapse-content">
+							<ul>
+								<li>2015年5月至今<br/>自学web前端</li>
+								<li>2009.9-2013.6<br/>河北科技师范学院<br/>物理学 本科</li>
+								<li>2006.9-2009.6<br/>常德市一中</li>
+							</ul>
+						</div>
+					</li>
+					<li class="mui-table-view-cell mui-collapse">
+						<a class="mui-navigate-right" href="#">工作经历</a>
+						<div class="mui-collapse-content">
+							<ul>
+								<li>2014年9月至今<br/>常德鼎城区黄土店中学<br/>教师（有编制）</li>
+								<li>2013.9-2014.8<br/>常德汉寿县岩嘴乡中学<br/>教师（有编制）</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			  </div>
+			</div>
+		</div>
+	</body>
+	<script src="js/mui.min.js"></script>
+	<script src="js/index.js"></script>	
+</html>

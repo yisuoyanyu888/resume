@@ -1,0 +1,10 @@
+ .mui-bar-nav{
+background-color:#41cea9;
+}
+.mui-bar-nav .mui-title {
+color: white;
+}
+.mui-active .mui-icon,
+.mui-active .mui-tab-label {
+color: #41cea9;
+}
